@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register_bg1"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/register_username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_dzn"
+                android:padding="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="300dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                ></EditText>
+
+<!--            <EditText-->
+<!--                android:id="@+id/register_phone_number_input"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/register_username_input"-->
+<!--                android:background="@drawable/input_design"-->
+<!--                android:padding="20dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:hint="Phone number"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                ></EditText>-->
+
+            <EditText
+                android:id="@+id/register_emailid_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_username_input"
+                android:background="@drawable/white_dzn"
+                android:padding="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/register_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_emailid_input"
+                android:background="@drawable/white_dzn"
+                android:padding="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_overlay"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                ></EditText>
+
+<!--            <Button-->
+<!--                android:id="@+id/get_verification_code_btn"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_below="@+id/register_password_input"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/bg1"-->
+<!--                android:padding="10dp"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:text="Generate OTP"-->
+<!--                android:textColor="@color/menu_bg" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/verification_code"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/get_verification_code_btn"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="Enter ur verification code here.."-->
+<!--                android:textColor="@color/menu_bg"-->
+<!--                android:textStyle="bold" />-->
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/register_password_input"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/verify_btn"
+                android:padding="17dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:text="Create Account"
+                android:textColor="@android:color/white"
+                ></Button>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

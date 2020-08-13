@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EEA80C70</color>
+    <color name="colorPrimaryDark">#F1EBEB</color>
+    <color name="colorAccent">#FAA71370</color>
+    <color name="whitebg">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="buttons">#54CEE0</color>
+    <color name="green">#CD95DF2A</color>
+    <color name="menu_bg">#27E2BCCD</color>
+    <color name="whishlist_red">#F70303</color>
+    <color name="floating_bg">#FFFDFD</color>
+
+    <color name="black_overlay">#B7000000</color>
+</resources>

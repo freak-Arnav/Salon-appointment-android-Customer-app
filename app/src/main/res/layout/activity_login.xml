@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/salon1"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/login_phone_number_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:background="@drawable/white_dzn"
+                android:padding="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/login_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_phone_number_input"
+                android:background="@drawable/white_dzn"
+                android:padding="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                ></EditText>
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/login_password_input"
+                android:layout_marginTop="5dp">
+
+                <!--        <CheckBox-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:id="@+id/remember_me_chkb"-->
+                <!--            android:layout_marginLeft="17dp"-->
+                <!--            android:gravity="center_vertical"-->
+                <!--            android:text="Remember me"-->
+                <!--            android:textColor="@android:color/white"-->
+                <!--            android:textSize="16sp"-->
+                <!--            android:textStyle="bold"-->
+                <!--            app:cbd_strokeColor="@android:color/white">-->
+
+                <!--        </CheckBox>-->
+
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/remember_me_chkb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:text="Remember me"
+                    android:textColor="@color/black"
+                    app:cbd_strokeColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    ></com.rey.material.widget.CheckBox>
+
+                <TextView
+                    android:id="@+id/forget_password_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/remember_me_chkb"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="0dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"></TextView>
+
+<!--                <Button-->
+<!--                    android:id="@+id/get_verification_code_btn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_below="@+id/forget_password_link"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:background="@drawable/bg1"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:text="Generate OTP"-->
+<!--                    android:textColor="@color/menu_bg" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/verification_code"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/get_verification_code_btn"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:text="Enter ur verification code here.."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold" />-->
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/linear_layout_1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/verify_btn"
+                android:padding="17dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="15dp"
+                android:textSize="18sp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                ></Button>
+
+
+            <TextView
+                android:id="@+id/not_admin_panel_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm not an Admin"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/login_btn"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="25dp"
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"></TextView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

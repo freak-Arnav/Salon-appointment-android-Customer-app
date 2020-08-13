@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_my_bookings"
+            android:title="My Bookings"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_upcoming_bookings"
+            android:title="Upcoming Bookings"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/wishlist"
+            android:title="Favourites"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_proq_money"
+            android:title="ProQ Money"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_refernearn"
+            android:title="Refer n earn"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_about_pro_q"
+            android:title="About ProQ"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:title="Contact"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_tnc"
+            android:title="TnC"
+            android:iconTint="@color/whitebg"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            android:iconTint="@color/whitebg"/>
+    </group>
+
+    <item
+        android:id="@+id/nav_signout"
+        android:title="Sign out"
+        android:iconTint="@color/whitebg"/>
+
+
+</menu>
